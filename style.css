@@ -15,7 +15,6 @@ a {
 }
 a:visited {
    text-decoration: none;
-   
 }
 
 body,
@@ -54,14 +53,13 @@ body {
    text-rendering: optimizeSpeed;
    font-family: Inconsolata;
    line-height: 1.8;
-   
 }
 /*---TECH TAG---------------------------------------------------------*/
 .wrapper {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
-   overflow: hidden;  
+   overflow: hidden;
 }
 ._container {
    max-width: 860px;
@@ -113,7 +111,6 @@ body {
    font-weight: 500;
    color: #000;
    font-weight: 400;
-   
 }
 
 .menu__link:hover {
@@ -131,7 +128,6 @@ body {
 
 }
 .block {
-   
 }
 .block:not(:last-child) {
    padding: 0 0 100px 0;
@@ -139,7 +135,6 @@ body {
 
 .block__row {
    display: flex;
-   
 }
 @media (max-width: 750px) {
       .block__row {
@@ -191,8 +186,6 @@ body {
    }
 }
 .footer {
-   
-
 }
 .footer__text {
 
@@ -202,4 +195,7 @@ body {
 }
 .footer__item {
    padding: 10px 0;
+}
+.grey_link {
+   color: grey;
 }
