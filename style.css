@@ -1,22 +1,15 @@
 /* Null */
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-}
 
 ul[class],
 ol[class] {
    padding: 0;
 }
-
 a {
    text-decoration: none;
 }
 a:visited {
    text-decoration: none;
 }
-
 body,
 h1,
 h2,
@@ -33,9 +26,6 @@ dl,
 dd {
    margin: 0;
 }
-
-
-
 input,
 button,
 textarea,
@@ -89,7 +79,6 @@ body {
       margin: 0 20px;
    }
 }
-
 .menu__list {
    height: 60px;
    align-items: center;
@@ -98,25 +87,18 @@ body {
    flex-wrap: wrap;
    list-style: none;
 }
-
-.menu__item {
-}
-
 .menu__item:not(:last-child) {
    margin: 0 30 0 0;
 }
-
 .menu__link {
    font-size: 20px;
    font-weight: 500;
    color: #000;
    font-weight: 400;
 }
-
 .menu__link:hover {
    color: rgb(0, 64, 255);
 }
-
 .link {
    color: blue;
    text-decoration: wavy;
@@ -132,7 +114,6 @@ body {
 .block:not(:last-child) {
    padding: 0 0 100px 0;
 }
-
 .block__row {
    display: flex;
 }
@@ -141,21 +122,14 @@ body {
          flex-wrap: wrap;
       }
 }
-
 .block__column {
   min-width: 30%;
 }
-
-.block__item {}
-
 .item__name {
    font-size: 20px;
    font-weight: 400;
    padding: 0 0 10px 0;
 }
-
-.item__text {}
-
 .list {
    list-style-type: circle;
 }
@@ -164,13 +138,9 @@ body {
    font-size: 20px;
    font-weight: 400;
 }
-
-.item__text__more {}
-
 .dash-list {
    list-style: none;
 }
-
 
 /*---FOOTER--------------------------------------------------------------*/
 .footer__block {
@@ -184,11 +154,6 @@ body {
    .footer__block {
       margin: 0 20px;
    }
-}
-.footer {
-}
-.footer__text {
-
 }
 .footer__img {
    width: 100px;
