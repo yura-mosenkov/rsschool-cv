@@ -1,205 +1,138 @@
-/* Null */
+/*NULL***********************************************************/
 *,
 *::before,
 *::after {
+   padding: 0;
+   margin: 0;
    box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
-   padding: 0;
-}
-
-a {
-   text-decoration: none;
-}
-a:visited {
-   text-decoration: none;
-   
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-   margin: 0;
-}
-
-
-
-input,
-button,
-textarea,
-select {
-   font: inherit;
-}
+/*TECH***********************************************************/
 html {
    scroll-behavior: smooth;
 }
 
-/*---BODY---------------------------------------------------------*/
-
-body {
-   height: 100vh;
-   text-rendering: optimizeSpeed;
-   font-family: Inconsolata;
-   line-height: 1.8;
-   
-}
-/*---TECH TAG---------------------------------------------------------*/
-.wrapper {
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;  
-}
-._container {
+.container {
    max-width: 860px;
    margin: 0 auto;
-   box-sizing: content-box;
 }
 
-/*---HEADER-----------------------------------------------------------------*/
-.header__container {
-   position: fixed;
-   z-index: 50;
-   left: 0;
-   right: 0;
+body {
+   font-family: Inconsolata;
+   font-size: 16px;
+   line-height: 1.7;
+   color: black;
+}
+
+a {
+   text-decoration: none;
+   color: blue;
+}
+
+p {
+   font-family: inherit;
+   font-size: 16px;
+   color: black;
+   line-height: inherit;
+}
+
+.block:before {
+   display: block;
+   content: " ";
+   margin-top: -80px;
+   height: 80px;
+}
+
+/*HEADER***********************************************************/
+.header {
+   position: sticky;
    top: 0;
-   background-color: #fff;
-}
-.header__menu {
-   border-bottom: 1px dashed black;
-}
-@media (max-width: 880px) {
-   .header__menu {
-      margin: 0 20px;
-   }
-}
-@media (max-width: 620px) {
-   .header__menu {
-      margin: 0 20px;
-   }
+   width: 100%;
+   background:rgba(255, 255, 255, 0.8);
+   border-bottom: 1px black dashed;
 }
 
-.menu__list {
-   height: 60px;
-   align-items: center;
+.nav {
    display: flex;
    justify-content: space-between;
-   flex-wrap: wrap;
+   align-items: center;
+   height: 60px;
    list-style: none;
 }
 
-.menu__item {
+.nav a {
+   text-decoration: none;
+   font-size: 18px;
+   color: black;
 }
 
-.menu__item:not(:last-child) {
-   margin: 0 30 0 0;
+.nav a:hover {
+   color: grey;
 }
 
-.menu__link {
-   font-size: 20px;
-   font-weight: 500;
-   color: #000;
-   font-weight: 400;
-   
+/*MAIN***********************************************************/
+.main {
+   margin: 30px 0 0 0;
 }
 
-.menu__link:hover {
-   color: rgb(0, 64, 255);
-}
-
-.link {
-   color: blue;
-   text-decoration: wavy;
-}
-
-/*---MAIN----------------------------------------------------------------*/
-.content {
-   margin: 100px 20px 0 20px;
-
-}
 .block {
-   
+   margin: 50px 0 0 0;
 }
-.block:not(:last-child) {
-   padding: 0 0 100px 0;
+
+.photo {
+   width: 130px;
+   border-radius: 50%;
+   padding: 5px;
+   border: 1px dashed black;
 }
 
 .block__row {
    display: flex;
-   
-}
-@media (max-width: 750px) {
-      .block__row {
-         flex-wrap: wrap;
-      }
 }
 
 .block__column {
-  min-width: 30%;
+   min-width: 30%;
 }
 
-.block__item {}
+.block__item {
+   padding: 0 0 50px;
+}
 
 .item__name {
-   font-size: 20px;
-   font-weight: 400;
-   padding: 0 0 10px 0;
+   font-size: 18px;
+   font-weight: normal;
+   padding: 0 0 15px 0;
 }
 
-.item__text {}
-
-.list {
+.experience_list {
    list-style-type: circle;
 }
-.item__name__more {
-   padding: 25px 0 10px 0;
-   font-size: 20px;
-   font-weight: 400;
+
+.code_block {
+   display: block;
+   width: 100%;
+   background: rgb(222, 222, 222);
 }
 
-.item__text__more {}
-
-.dash-list {
-   list-style: none;
+.code-example {
+   white-space: pre-line;
+   font-size: 14px;
+   padding: 10px;
 }
 
-
-/*---FOOTER--------------------------------------------------------------*/
+/*FOOTER***********************************************************/
 .footer__block {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    margin: 80px 0 0 0;
    border-top: 1px dashed black;
 }
-@media (max-width: 880px) {
-   .footer__block {
-      margin: 0 20px;
-   }
-}
-.footer {
-   
 
-}
-.footer__text {
-
-}
 .footer__img {
    width: 100px;
 }
+
 .footer__item {
    padding: 10px 0;
 }
